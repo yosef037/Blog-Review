@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--yellow: hsl(47, 88%, 63%);
+	--white: hsl(0, 0%, 100%);
+	--gray500: hsl(0, 0%, 42%);
+	--gray950: hsl(0, 0%, 7%);
+}
+
+body {
+	font-family: "Figtree";
+	font-size: 16px;
+	background-color: var(--yellow);
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: calc(100vh - 1px);
+}
+
+.container {
+	background-color: var(--white);
+	margin: 1.25rem;
+	padding: 1.25rem;
+	border: 1px solid black;
+	border-radius: 1.5rem;
+	width: max(23vw, 375px);
+	box-shadow: 10px 10px 10px black;
+}
+
+.navTop img {
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+
+.navTop p {
+	margin-top: 20px;
+	color: var(--gray500);
+}
+
+.navTop h3 {
+	margin-top: 20px;
+	color: rgb(63, 60, 60);
+}
+
+.navTop h1 {
+	margin-top: 10px;
+	font-weight: 800;
+	transition: 0.5s;
+	cursor: pointer;
+}
+
+.navTop:active {
+	color: var(--yellow);
+}
+
+.navTop h1:hover {
+	color: var(--yellow);
+	transform: scale(1.05);
+}
+.navTop span {
+	background-color: var(--yellow);
+	padding: 10px;
+	border-radius: 5px;
+}
+
+.container .profile {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-top: 20px;
+}
+
+.container,
+.profile p {
+	font-weight: 800;
+}
